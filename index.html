@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sipariş Listesi</title>
+    <title>Sağlamlar Kozmetik Sipariş Sayfası</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -149,7 +149,7 @@
             itemList.appendChild(item);
 
             document.getElementById('product-name').value = '';
-            document.getElementById('product-quantity').value = '1';
+            document.getElementById('product-quantity').value = '';
         });
 
         sendButton.addEventListener('click', async () => {
@@ -193,7 +193,7 @@
                 subject = `${companyName || 'Firma'} - Sipariş Listesi`;
             }
 
-            const mailtoLink = `mailto:example@mail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(itemListText)}`;
+            const mailtoLink = `mailto:isaasaglam@icloud.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(itemListText)}`;
             window.location.href = mailtoLink;
         });
     </script>
